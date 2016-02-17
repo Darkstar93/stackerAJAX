@@ -19,12 +19,12 @@
 		<div class="stack">	
 			<h3>Get Unanswered Questions</h3>
 			<p>Find unanswered questions by tag. For multiple tags, use a semi-colon to separate.</p>
-			<form class="unanswered-getter">
+			<form class="unanswered-getter" onsubmit="return false;">
 				<input type="text" placeholder='e.g., "HTML" or "HTML;CSS"' name="tags" size="30" autofocus required>
 				<input type="submit" value="Submit">
 			</form>
 			<h3>View the Top Answerers for a Tag</h3>
-			<form class="inspiration-getter">
+			<form class="inspiration-getter" onsubmit="return false;">
 				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
 				<input type="submit" value="Submit">
 			</form>
@@ -45,6 +45,18 @@
 			<dt>Asker</dt>
 				<dd class="asker"></dd>
 		</dl>
+		<dl class="result answerers">
+			<img src class="user-image">
+			<dt>Display Name</dt>
+				<dd class="user-name"><a href="" target="_blank"></a></dd>
+			<dt>Reputation</dt>
+				<dd class="user-reputation"></dd>
+			<dt>Post Count</dt>
+				<dd class="user-postcount"></dd>
+			<dt>Score</dt>
+				<dd class="user-score"></dd>
+
+		</dl>
 		<div class="error">
 			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
 		</div>
@@ -53,3 +65,4 @@
 	<script src="js/app.js"></script>
 </body>
 </html>
+
